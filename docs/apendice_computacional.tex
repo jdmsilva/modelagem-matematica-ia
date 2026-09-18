@@ -1,0 +1,64 @@
+\chapter{Apêndice computacional}
+\label{ap:computacional}
+\chapterlead{O código reproduz uma regra; a investigação começa quando perguntamos o que acontece ao modificá-la.}
+
+Os programas que acompanham este livro estão disponíveis como material suplementar. Optamos por não imprimir dezenas de páginas de código-fonte: isso tornaria a obra mais extensa, dificultaria atualizações e reduziria a legibilidade dos capítulos.
+
+\begin{center}
+\textbf{Repositório do livro}\\[1mm]
+\texttt{\RepositorioLivro}\\[2mm]
+\textbf{Versão arquivada}\\[1mm]
+DOI: \texttt{\DOICodigo}
+\end{center}
+
+\begin{validacao}[Código disponível não significa resultado automaticamente validado]
+Em fenômenos reais, reproduzir o cálculo não demonstra que o modelo representa adequadamente a realidade. Em otimização matemática, um valor numérico constitui evidência computacional; não se transforma, por isso, em prova de otimalidade.
+\end{validacao}
+
+\section{Reproduzir, perturbar e investigar}
+\[
+\boxed{\text{REPRODUZIR}\qquad\text{PERTURBAR}\qquad\text{INVESTIGAR}}
+\]
+Reproduzir significa executar a experiência do livro; perturbar significa mudar parâmetros, posições ou configurações; investigar significa interpretar o que mudou e formular uma nova pergunta.
+
+\section{Programas do Capítulo 1}
+\textbf{A.1 — \texttt{01\_logistica\_macas.py}.} Modelo logístico, calibração de $\beta$ e tempos de referência.\\
+\textbf{A.2 — \texttt{02\_camadas\_macas.py}.} Sequências geométricas e comparação com a logística.\\
+\textbf{A.3 — \texttt{03\_rede\_fcc\_macas.py}.} Construção da FCC finita.\\
+\textbf{A.4 — \texttt{04\_contagio\_fcc.py}.} Regra $1-(1-p)^m$, atualização síncrona e irreversível.\\
+\textbf{A.5 — \texttt{05\_posicao\_foco.py}.} Grau, distância à fronteira, alcance e contaminação média.\\
+\textbf{A.6 — \texttt{06\_robustez\_fcc.py}.} Remoção de arestas e recalibração de $p$.
+
+\section{Programa do Capítulo 2}
+\textbf{A.7 — \texttt{07\_bolas\_cubo\_1a5.py}.} Reproduz $d_n$, $r_n/L$, ocupação e vazio para $n=1,\ldots,5$.
+
+\section{Programas do Capítulo 3}
+\textbf{A.8 — \texttt{08\_otimizacao\_cubo.py}.} Busca heurística de configurações. O resultado é marcado explicitamente como melhor encontrado na execução, não como ótimo provado.\\
+\textbf{A.9 — \texttt{09\_grafo\_contatos.py}.} Constrói o grafo de contatos de uma configuração.
+
+\section{Programas do Capítulo 4}
+\textbf{A.10 — \texttt{10\_problema\_inverso\_cubo.py}.} Usa $L_n=2r(1+1/d_n)$.\\
+\textbf{A.11 — \texttt{11\_pilha\_tetraedrica.py}.} Números tetraédricos, densidade e limite de Kepler.\\
+\textbf{A.12 — \texttt{12\_esferas\_na\_esfera.py}.} Ocupação $\phi_n=n(r_n/R)^3$ e vazio $\varepsilon_n=1-\phi_n$.\\
+\textbf{A.13 — \texttt{13\_comparar\_recipientes.py}.} Compara resultados com campos explícitos de status e fonte.\\
+\textbf{A.14 — \texttt{14\_copo\_areia.py}.} Analisa a porosidade experimental e compara com $1-\pi/(3\sqrt2)$.
+
+\section{Notebooks}
+O repositório inclui três notebooks: \texttt{cap01\_macas.ipynb}, \texttt{cap02\_03\_empacotamento.ipynb} e \texttt{cap04\_inversos.ipynb}.
+
+\section{Reprodutibilidade}
+Toda experiência computacional usada para sustentar uma afirmação deve registrar: versão do código, parâmetros, semente aleatória, origem dos dados, critério de parada e status epistemológico do resultado.
+
+Sugerimos os rótulos
+\[
+\boxed{\text{provado},\quad\text{melhor conhecido},\quad\text{construção},\quad\text{experimento}.}
+\]
+
+\section{GitHub e versão arquivada}
+Durante o desenvolvimento, o GitHub pode receber correções e novos programas. Para manter a edição do livro reproduzível, a versão correspondente à publicação deve ser congelada em uma release e arquivada no Zenodo, com DOI permanente.
+
+No arquivo principal do livro, defina:
+\begin{verbatim}
+\newcommand{\RepositorioLivro}{URL_DO_REPOSITORIO}
+\newcommand{\DOICodigo}{DOI_DA_VERSAO_1_0}
+\end{verbatim}

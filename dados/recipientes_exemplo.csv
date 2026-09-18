@@ -1,0 +1,8 @@
+n,recipiente,volume,status,fonte
+1,tetraedro,13.85640646,provado,formula_metrica
+1,cubo,8.0,provado,formula_metrica
+1,octaedro,6.92820323,provado,formula_metrica
+1,dodecaedro,5.5503,provado,formula_metrica
+1,icosaedro,5.0541,provado,formula_metrica
+4,tetraedro,38.70,construcao,pilha_tetraedrica
+4,cubo,39.80,melhor_conhecido,registro_historico
