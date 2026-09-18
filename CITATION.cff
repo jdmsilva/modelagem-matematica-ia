@@ -1,13 +1,21 @@
 cff-version: 1.2.0
-message: "Cite o livro e a versao arquivada do codigo."
-title: "Modelagem Matematica e Inteligencia Artificial — Repositorio Computacional"
+message: "Se você utilizar este repositório, cite esta versão do software."
+title: "Modelagem Matemática e Inteligência Artificial — Repositório Computacional"
 version: 1.0.0
 date-released: 2026-09-18
 authors:
-  - family-names: Bassanezi
-    given-names: Rodney Carlos
-  - family-names: da Silva
-    given-names: Joao de Deus Mendes
+  - family-names: "Bassanezi"
+    given-names: "Rodney Carlos"
+  - family-names: "da Silva"
+    given-names: "João de Deus Mendes"
 license: MIT
-repository-code: "INSERIR_URL_DO_GITHUB"
-doi: "INSERIR_DOI_DO_ZENODO"
+repository-code: "https://github.com/jdmsilva/modelagem-matematica-ia"
+url: "https://doi.org/10.5281/zenodo.22837931"
+doi: "10.5281/zenodo.22837931"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22837931"
+    description: "DOI da versão 1.0.0 arquivada no Zenodo"
+  - type: doi
+    value: "10.5281/zenodo.22837930"
+    description: "DOI geral do software para todas as versões"
