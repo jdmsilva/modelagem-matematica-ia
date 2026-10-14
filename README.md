@@ -55,6 +55,7 @@ $env:PYTHONPATH="$PWD/src"
 - `src/` — funções comuns usadas pelos programas.
 - `docs/` — apêndice computacional e guia rápido.
 - `tests/` — testes de consistência de resultados centrais.
+- `laboratorio_interativo/` — aplicativo HTML autocontido que integra os problemas do livro em uma interface exploratória.
 
 ## Programas
 
@@ -83,6 +84,14 @@ $env:PYTHONPATH="$PWD/src"
 - `12_esferas_na_esfera.py`
 - `13_comparar_recipientes.py`
 - `14_copo_areia.py`
+  
+## Laboratório interativo
+
+A pasta `laboratorio_interativo/` contém o aplicativo
+**Laboratório Interativo — Modelagem Matemática e IA**.
+Para executar, abra diretamente:
+`laboratorio_interativo/index.html`
+O arquivo é autocontido e não exige instalação nem conexão com a internet.
 
 ## Notebooks
 
