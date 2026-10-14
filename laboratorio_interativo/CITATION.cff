@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Se você utilizar este aplicativo, cite os autores e a versão arquivada correspondente."
+title: "Laboratório Interativo — Modelagem Matemática e IA"
+version: 1.0.0
+date-released: 2026-10-14
+authors:
+  - family-names: "Bassanezi"
+    given-names: "Rodney Carlos"
+  - family-names: "da Silva"
+    given-names: "João de Deus Mendes"
+license: MIT
+repository-code: "https://github.com/jdmsilva/modelagem-matematica-ia"
