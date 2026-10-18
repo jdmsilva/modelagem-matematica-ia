@@ -1,9 +1,8 @@
 # Modelagem Matemática e Inteligência Artificial
+
 ## Problemas revisitados, novas perguntas — repositório computacional
 
-[![DOI](https://zenodo.org/badge/1376408108.svg)](https://doi.org/10.5281/zenodo.22837930)
-
-Este repositório acompanha o livro **Modelagem Matemática e Inteligência Artificial: problemas revisitados, novas perguntas**, de **Rodney Carlos Bassanezi** e **João de Deus Mendes da Silva**.
+Este repositório acompanha o livro *Modelagem Matemática e Inteligência Artificial: problemas revisitados, novas perguntas*, de **Rodney Carlos Bassanezi** e **João de Deus Mendes da Silva**.
 
 A proposta do material computacional é trabalhar em três movimentos:
 
@@ -11,19 +10,37 @@ A proposta do material computacional é trabalhar em três movimentos:
 2. **Perturbar** parâmetros, configurações e hipóteses.
 3. **Investigar** novas perguntas.
 
-> Uma simulação implementa uma regra. Ela não decide, por si só, se essa regra representa adequadamente a realidade nem se um valor numérico constitui um ótimo provado.
+Uma simulação implementa uma regra. Ela não decide, por si só, se essa regra representa adequadamente a realidade nem se um valor numérico constitui um ótimo provado.
+
+---
 
 ## Repositório e versão arquivada
 
-- GitHub: https://github.com/jdmsilva/modelagem-matematica-ia
-- DOI da versão associada ao livro: https://doi.org/10.5281/zenodo.22837931
-- DOI geral do software, válido para acompanhar versões futuras: https://doi.org/10.5281/zenodo.22837930
+**GitHub:**  
+https://github.com/jdmsilva/modelagem-matematica-ia
+
+**DOI da versão associada ao livro — v1.1.0:**  
+https://doi.org/10.5281/zenodo.23369973
+
+**DOI geral do software:**  
+https://doi.org/10.5281/zenodo.22837930
 
 A versão arquivada correspondente à edição do livro deve ser citada pelo DOI específico:
 
-**Bassanezi, Rodney Carlos; da Silva, João de Deus Mendes. _Modelagem Matemática e Inteligência Artificial — Repositório Computacional_. Versão 1.0.0. Zenodo, 2026. DOI: 10.5281/zenodo.22837931.**
+> Bassanezi, Rodney Carlos; da Silva, João de Deus Mendes.  
+> *Modelagem Matemática e Inteligência Artificial — Repositório Computacional*.  
+> Versão 1.1.0. Zenodo, 2026.  
+> DOI: 10.5281/zenodo.23369973.
+
+A versão **1.1.0** incorpora o **Laboratório Interativo — Modelagem Matemática e IA**.
+
+---
 
 ## Instalação
+
+Os programas numéricos foram escritos em Python.
+
+Crie um ambiente virtual e instale as dependências:
 
 ```bash
 python -m venv .venv
@@ -32,17 +49,21 @@ pip install -r requirements.txt
 
 Defina `PYTHONPATH` apontando para `src/`.
 
-Linux/macOS:
+### Linux/macOS
 
 ```bash
 export PYTHONPATH="$PWD/src"
 ```
 
-PowerShell:
+### PowerShell
 
 ```powershell
 $env:PYTHONPATH="$PWD/src"
 ```
+
+O Laboratório Interativo não depende dessa instalação. Ele pode ser executado diretamente em um navegador moderno.
+
+---
 
 ## Estrutura
 
@@ -56,6 +77,8 @@ $env:PYTHONPATH="$PWD/src"
 - `docs/` — apêndice computacional e guia rápido.
 - `tests/` — testes de consistência de resultados centrais.
 - `laboratorio_interativo/` — aplicativo HTML autocontido que integra os problemas do livro em uma interface exploratória.
+
+---
 
 ## Programas
 
@@ -84,14 +107,36 @@ $env:PYTHONPATH="$PWD/src"
 - `12_esferas_na_esfera.py`
 - `13_comparar_recipientes.py`
 - `14_copo_areia.py`
-  
-## Laboratório interativo
 
-A pasta `laboratorio_interativo/` contém o aplicativo
-**Laboratório Interativo — Modelagem Matemática e IA**.
+---
+
+## Laboratório Interativo
+
+A pasta `laboratorio_interativo/` contém o aplicativo:
+
+**Laboratório Interativo — Modelagem Matemática e IA**
+
 Para executar, abra diretamente:
-`laboratorio_interativo/index.html`
-O arquivo é autocontido e não exige instalação nem conexão com a internet.
+
+```text
+laboratorio_interativo/index.html
+```
+
+O aplicativo é autocontido e não exige instalação de Python nem conexão com a internet.
+
+O laboratório integra, em uma única interface:
+
+- propagação da contaminação entre maçãs em uma rede FCC;
+- comparação entre diferentes posições iniciais da maçã contaminada;
+- variação do número inicial de maçãs contaminadas;
+- idealização da maçã como esfera;
+- exploração de problemas de empacotamento em uma caixa cúbica;
+- problema inverso e comparação de recipientes;
+- retorno ao problema concreto de dimensionamento de recipientes para maçãs.
+
+O laboratório tem finalidade exploratória. Uma configuração obtida computacionalmente constitui uma construção ou evidência numérica, mas não substitui uma prova de otimalidade.
+
+---
 
 ## Notebooks
 
@@ -101,16 +146,18 @@ A pasta `notebooks/` contém roteiros didáticos curtos para os capítulos:
 - `cap02_03_empacotamento.ipynb`
 - `cap04_inversos.ipynb`
 
+---
+
 ## Reprodutibilidade
 
 Sempre registre:
 
-- versão do código;
-- parâmetros;
+- versão do código ou do aplicativo;
+- parâmetros utilizados;
 - semente aleatória, quando houver;
 - origem dos dados;
-- critério de parada;
-- status do resultado.
+- critério de parada ou número de repetições;
+- status epistemológico do resultado.
 
 Para os resultados computacionais, recomendamos distinguir explicitamente:
 
@@ -119,22 +166,40 @@ Para os resultados computacionais, recomendamos distinguir explicitamente:
 - `construcao`
 - `experimento`
 
+Essas categorias não são intercambiáveis.
+
+Uma configuração obtida computacionalmente constitui evidência ou construção, mas não substitui uma prova de otimalidade.
+
+---
+
 ## Sobre `p = 0.290215`
 
-Esse valor aparece no capítulo das maçãs como **valor de referência**. O módulo `modelagem_ia.fcc` inclui a função `calibrate_p`, que permite recalibrar `p` explicitamente a partir de um foco inicial, horizonte temporal e fração-alvo.
+Esse valor aparece no capítulo das maçãs como **valor de referência**.
+
+O módulo `modelagem_ia.fcc` inclui a função `calibrate_p`, que permite recalibrar `p` explicitamente a partir de um foco inicial, horizonte temporal e fração-alvo.
+
+Assim, `p = 0.290215` não deve ser interpretado automaticamente como uma estimativa empírica universal do processo de deterioração.
+
+---
 
 ## Citação
 
 Para citar a versão computacional associada ao livro:
 
-```text
-Bassanezi, Rodney Carlos; da Silva, João de Deus Mendes.
-Modelagem Matemática e Inteligência Artificial — Repositório Computacional.
-Versão 1.0.0. Zenodo, 2026.
-DOI: 10.5281/zenodo.22837931
-```
+> Bassanezi, Rodney Carlos; da Silva, João de Deus Mendes.  
+> *Modelagem Matemática e Inteligência Artificial — Repositório Computacional*.  
+> Versão 1.1.0. Zenodo, 2026.  
+> DOI: 10.5281/zenodo.23369973.
+
+**DOI específico da versão 1.1.0:**  
+https://doi.org/10.5281/zenodo.23369973
+
+**DOI geral do software:**  
+https://doi.org/10.5281/zenodo.22837930
 
 O arquivo `CITATION.cff` permite que o GitHub e outros serviços apresentem automaticamente a forma de citação.
+
+---
 
 ## Licença
 
