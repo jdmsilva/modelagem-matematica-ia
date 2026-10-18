@@ -19,7 +19,13 @@ repository-code: "https://github.com/jdmsilva/modelagem-matematica-ia"
 
 url: "https://github.com/jdmsilva/modelagem-matematica-ia"
 
+doi: "10.5281/zenodo.23369973"
+
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23369973"
+    description: "DOI específico da versão 1.1.0"
+
   - type: doi
     value: "10.5281/zenodo.22837930"
     description: "DOI geral do software, válido para todas as versões"
